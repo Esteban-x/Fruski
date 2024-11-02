@@ -7,7 +7,7 @@ import Bottombar from '@/components/shared/Bottombar'
 import LeftSidebar from '@/components/shared/LeftSidebar'
 import RightSidebar from '@/components/shared/RightSidebar'
 
-export const medata: Metadata = {
+export const metadata: Metadata = {
   title: 'Fruski',
   description: 'Learn about France or Russia interacting with natives',
 }
