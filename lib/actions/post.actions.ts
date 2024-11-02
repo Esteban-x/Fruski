@@ -3,7 +3,6 @@ import { revalidatePath } from 'next/cache'
 import Post from '../models/post.model'
 import User from '../models/user.model'
 import { connectToDb } from '../mongoose'
-import mongoose, { ObjectId } from 'mongoose'
 
 interface Params {
   text: string

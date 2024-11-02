@@ -16,7 +16,6 @@ import { Textarea } from '../ui/textarea'
 import { Button } from '../ui/button'
 import { usePathname, useRouter } from 'next/navigation'
 import { createPost } from '@/lib/actions/post.actions'
-import { isValidObjectId, ObjectId } from 'mongoose'
 
 interface Props {
   userId: string
