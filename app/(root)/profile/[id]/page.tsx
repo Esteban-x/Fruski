@@ -8,8 +8,8 @@ import Image from 'next/image'
 import { redirect } from 'next/navigation'
 import React from 'react'
 
-const Page = async ({ params }: { params: { id: string } }) => {
-  const { id } = params
+const Page = async ({ params }: { params: Promise<{ id: string }> }) => {
+  const { id } = await params
 
   const user = await currentUser()
 
