@@ -3,7 +3,7 @@ import { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import '../globals.css'
 
-export const medata: Metadata = {
+export const metadata: Metadata = {
   title: 'Fruski',
   description: 'Learn about France or Russia interacting with natives',
 }

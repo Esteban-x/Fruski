@@ -14,6 +14,7 @@ export const medata: Metadata = {
 const inter = Inter({
   subsets: ['latin', 'cyrillic', 'latin-ext', 'cyrillic-ext'],
 })
+
 export default function RootLayout({
   children,
 }: {
