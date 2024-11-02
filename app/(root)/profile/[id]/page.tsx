@@ -9,7 +9,7 @@ import { redirect } from 'next/navigation'
 import React from 'react'
 
 const Page = async ({ params }: { params: { id: string } }) => {
-  const { id } = await params
+  const { id } = params
 
   const user = await currentUser()
 
