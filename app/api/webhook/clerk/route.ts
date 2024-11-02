@@ -1,3 +1,9 @@
+/* eslint-disable camelcase */
+// Resource: https://clerk.com/docs/users/sync-data-to-your-backend
+// Above article shows why we need webhooks i.e., to sync data to our backend
+
+// Resource: https://docs.svix.com/receiving/verifying-payloads/why
+// It's a good practice to verify webhooks. Above article shows why we should do it
 import { Webhook, WebhookRequiredHeaders } from 'svix'
 import { headers } from 'next/headers'
 
@@ -10,7 +16,7 @@ import {
   deleteCommunity,
   removeUserFromCommunity,
   updateCommunityInfo,
-} from '@/lib/actions/community.action'
+} from '@/lib/actions/community.actions'
 
 // Above document lists the supported events
 type EventType =
@@ -29,7 +35,7 @@ type Event = {
 
 export const POST = async (request: Request) => {
   const payload = await request.json()
-  const header = headers()
+  const header = await headers()
 
   const heads = {
     'svix-id': header.get('svix-id'),
